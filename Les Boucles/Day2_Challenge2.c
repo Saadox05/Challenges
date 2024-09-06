@@ -15,20 +15,25 @@ int e=1;
 int space=30;
     for(int i=0;i<N_linge;i++)
     {
-        if(e%2!=0)
-        {
-            for(int i=1;i<space;i++)
+        
+        
+            for(int j=1;j<space;j++)
             {
                 printf(" ");
             }
-            for(int i=0;i<e;i++)
+            for(int k=0;k<e;k++)
             {
                 printf("*");
             }
+            
+        do{
+            e++;
+        }while(e%2==0);
             space--;
+            
             printf("\n");
-        }
-        e++;
+        
+        
     }
 
 
